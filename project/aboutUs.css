@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf');
+
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 0px;
+}
+
+main {
+    padding: 0px;
+    padding-top: 45px;
+
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+    min-height: calc(100vh - 70px);
+
+    gap: 0px
+}
+
+main div:first-child{
+    background-color: #2b2b2b;
+
+    grid-column: span 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+    color: #fff;
+}
+
+
+main div:nth-child(2){
+    background-image: url("images/cards/nature.jpg");
+    background-size: cover;
+
+    grid-column: span 3;
+}
+
+main div:nth-child(3){
+    background-color: #c0c0c0;
+
+    grid-column: span 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div:nth-child(3) h1{
+    transform: rotate(-90deg);
+    font-size: 50px;
+}
+
+main div:nth-child(4){
+
+    grid-column: span 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    padding: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+main div:nth-child(4) h2{
+
+    display: none;
+}
+
+main div:nth-child(5){
+    background-color: #505050;
+
+    grid-column: span 1;
+}
+
+main div:nth-child(6){
+    background-image: url("images/cards/nature2.jpg");
+    background-size: cover;
+
+    grid-column: span 3;
+}
+
+main div:nth-child(7){
+    
+    background-color: #8c8c8c;
+
+    grid-column: span 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    color: #fff;
+}
+
+
+footer{
+    margin-top: 0px !important;
+}
+
+@media screen and (max-width: 850px) {
+
+    body{
+        font-size: 14px;
+    }
+
+    main{
+        grid-template-rows: 0.25fr 2fr 0.75fr 0.5fr;
+
+        font-size: 14px;
+    }
+
+    main div:first-child{
+        grid-column: span 6;
+        order: 1;
+    }
+
+    main div:nth-child(2){
+        grid-column: span 6;
+        max-height: 100%;
+
+        order: 0;
+    }
+
+    main div:nth-child(3){
+        display: none;
+    }
+
+    main div:nth-child(4){
+        padding: 40px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        grid-column: span 5;
+    }
+
+    main div:nth-child(4) h2{
+
+        display: block;
+
+        align-self: flex-start;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    main div:nth-child(5){
+        display: none;
+    }
+
+}

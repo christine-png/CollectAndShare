@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf');
+
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 0px;
+}
+
+main {
+    padding: 40px;
+    padding-top:100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+    flex-basis: 20%;
+
+    min-height: calc(100vh - 140px);
+
+    gap: 50px;
+}
+
+.card{
+    min-width: 350px;
+    width: 30%;
+    height: 70vh;
+
+    box-shadow:
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.311);
+
+    border-radius: 5px;
+
+    background-size: cover;
+    filter: grayscale(70%);
+
+    text-align: center;
+
+}
+
+.card:hover{
+    filter: grayscale(0%);
+}
+
+.card h2{
+    background-color: #2b2b2bdb;
+    color: white;
+    padding: 10px;
+}
+
+.card:first-child{
+    background-image: url(images/cards/family.jpg);
+    
+}
+
+.card:nth-child(2){
+    background-image: url(images/cards/friends.jpg);
+}
+
+.card:nth-child(3){
+    background-image: url(images/cards/travel.jpg);
+}
+
+.card:nth-child(4){
+    background-image: url(images/cards/nature.jpg);
+}
+
+.card:nth-child(5){
+    background-image: url(images/cards/events.jpg);
+}
+
+.card:nth-child(6){
+    background-image: url(images/cards/food.jpg);
+}
+
+.card:nth-child(7){
+    background-image: url(images/cards/school.jpg);
+}
+
+.card:nth-child(8){
+    background-image: url(images/cards/art.jpg);
+}
+
+.card a{
+    text-decoration: none;
+    background-color: #e0e0e0d7;
+    border: #fff 2px solid;
+    border-radius: 25px;
+
+    padding: 5px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    text-align: center;
+    font-weight: 800;
+
+    position: absolute;
+    bottom: 50px;
+
+    left: calc(50% - 70px);
+
+    color: black;
+
+}
+
+.card a:hover{
+    background-color: #e0e0e0d7;
+}
+
+@media screen and (max-width: 500px) {
+
+    .card{
+        filter: grayscale(0%);
+    }
+
+}
+
+    

@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf');
+
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 0px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+
+
+main {
+    padding-top: 50px;
+}
+
+.slideShow {
+    margin: 10px;
+    height: calc(100vh - 75px);
+}
+
+.slideImage {
+    border-radius: 10px;
+
+    padding: 0px;
+
+    background-image: url("./images/slides/slide1.jpg");
+    background-position: top left;
+    background-size: cover;
+
+    height: 100%;
+    min-width: 100%;
+    filter: grayscale(60%);
+
+
+    display: grid;
+    grid-template-columns: 80px auto 80px;
+    grid-template-rows: auto 70px;
+
+}
+
+.slideImage:hover {
+    filter: grayscale(0%);
+}
+
+
+.buttonGroupSlides {
+
+
+    grid-column: 2;
+
+    width: 140px;
+    text-align: center;
+
+
+    background-color: hsla(0, 0%, 0%, 0.361);
+    border-radius: 4px;
+
+    height: fit-content;
+
+    padding-top: 5px;
+}
+
+.buttonSlideContainer {
+
+    grid-column: 2;
+
+    margin-left: calc(50% - 59px)
+}
+
+.dot {
+    height: 11px;
+    width: 11px;
+    border-radius: 25px;
+    z-index: 10;
+    border: none;
+    margin: 2px;
+    background-color: #ffffff;
+    color: transparent;
+}
+
+
+.dot:hover {
+
+    background-color: #a3a3a3;
+    cursor: pointer;
+}
+
+.activeDot {
+    background-color: #c8c8c8;
+    z-index: 13;
+}
+
+.arrow {
+    padding: 20px;
+}
+
+.symbol {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 50px;
+
+    padding: 10px;
+
+    margin-top: calc(45vh - 60px);
+
+    background-color: transparent;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 100px;
+
+    border: none;
+}
+
+
+.rectangle {
+
+    font-size: 24px;
+
+    font-family: default;
+
+    position: absolute;
+    right: 180px;
+
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 20px;
+    margin-top: 15vh;
+
+    max-width: 450px;
+
+    border-radius: 10px;
+
+    z-index: 9;
+
+}
+
+.rectangle h4 {
+    margin: 0px;
+    margin-bottom: 20px;
+
+}
+
+
+#rightArrow {
+    grid-column: 3;
+}
+
+#content {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+
+    flex-flow: row wrap;
+
+    row-gap: 20px;
+
+}
+
+.box1 {
+    background-color: #2b2b2b;
+    color: #fff;
+    box-shadow:
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.6);
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    vertical-align: middle;
+
+    min-height: 30vh;
+    height: max-content;
+    padding: 40px;
+    padding-bottom: 0px;
+    flex-basis: calc(50% - 120px);
+
+    margin: 20px;
+
+    border-radius: 5px;
+
+    font-size: 18px;
+
+
+}
+
+.icons {
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .box{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    
+
+    .rectangle {
+        grid-column: span 3;
+        color: black;
+
+        position: relative;
+        width: 90%;
+        height: fit-content;
+
+        right: 0px;
+        left: 0px;
+        top: 20px;
+
+        margin: 0px;
+
+        border-radius: 5px;
+
+        box-shadow: none;
+
+        font-size: 24px;
+    }
+
+    .rectangle span{
+        display: none;
+    }
+
+    .slideShow {
+        display: none;
+    }
+
+    #content{
+        margin-top: 0px
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .box {
+        vertical-align: middle;
+
+        min-height: 5vh;
+        height: max-content;
+        padding: 40px;
+        padding-bottom: 60px;
+        flex-basis: 100%;
+
+        margin: 20px;
+
+        border-radius: 5px;
+    }
+
+    #firstBox {
+        order: 1;
+    }
+
+    #secondBox {
+        order: 2;
+    }
+
+    #fourthBox {
+        order: 3;
+    }
+
+    #thirdBox {
+        order: 4;
+    }
+
+    #fifthBox {
+        order: 5;
+    }
+
+    #sixthBox {
+        order: 6;
+    }
+
+    #seventhBox {
+        order: 8;
+    }
+
+    #eighthBox {
+        order: 7;
+    }
+
+    #ninthBox {
+        order: 9;
+    }
+
+    #tenthBox {
+        order: 10;
+    }
+
+    #eleventhBox {
+        order: 12;
+    }
+
+    #twelfthBox {
+        order: 11;
+    }
+
+    .icons {
+       
+        margin-top: 10%;
+    }
+
+    #content {
+        row-gap: 0px;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+
+
+    .slideImage {
+        display: grid;
+        grid-template-columns: 70px auto 70px;
+        grid-template-rows: max-content auto;
+    }
+
+
+
+    .symbol {
+        margin-top: calc(30vh - 60px);
+    }
+
+    .buttonGroupSlides {
+        display: none;
+    }
+
+
+    .arrow {
+        display: none;
+    }
+
+
+
+
+}

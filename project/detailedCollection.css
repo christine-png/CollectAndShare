@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('./fonts/Noto_Sans/NotoSans-Regular.ttf');
+
+}
+
+body {
+    font-family: 'Nunito Sans';
+    margin: 0px;
+}
+
+
+main {
+    padding: 0px;
+    padding-top: 45px;
+
+    height: fit-content;
+
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 1fr;
+    grid-template-columns: none;
+
+    gap: 20px;
+}
+
+main h1 {
+    background-color: #2b2b2bc3;
+    color: #fff;
+
+    text-align: center;
+
+    padding: 20px;
+    margin: 0px;
+}
+
+main h2{
+    margin: 0px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.firstItem {
+    margin-top: 20px;
+}
+
+.collection {
+
+    height: 45vh;
+    max-width: 98vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 10px
+}
+
+.image {
+    margin: 0px;
+    padding: 0px;
+
+    height: 90%;
+
+    filter: grayscale(70%);
+}
+
+.image:hover {
+    filter: grayscale(0%)
+}
+
+.arrow {
+    padding: 0px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    position: absolute;
+
+    z-index: 10;
+}
+
+#rightArrow {
+    right: 0px;
+}
+
+.focused {
+    filter: grayscale(0%);
+    height: 95%;
+}
+
+.symbol {
+
+    color: #fff;
+    font-weight: bolder;
+    font-size: 80px;
+
+    padding: 10px;
+
+    margin-top: 150px;
+
+    background-color: transparent;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border-radius: 100px;
+
+    border: none;
+}
+
+.wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+
+
+.wrapper::-webkit-scrollbar {
+    width: max-content;
+  }
+  
+  .wrapper::-webkit-scrollbar-thumb {
+    background-color: #2b2b2b57;
+  }
+  
+  .wrapper::-webkit-scrollbar-track {
+    background-color: #f0f0f09d;
+  }
+
+
+
+
+@media screen and (max-width: 500px) {
+
+
+    main h1 {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    main{
+        grid-template-rows: 80px 1fr 1fr 1fr;
+    }
+
+    .focused {
+        filter: grayscale(0%);
+        height: 80%;
+    }
+
+    
+    
+
+}
+
+@media (pointer: coarse){
+    .wrapper::-webkit-scrollbar {
+        width: max-content;
+      }
+      
+      .wrapper::-webkit-scrollbar-thumb {
+        background-color: transparent;
+      }
+      
+      .wrapper::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+}

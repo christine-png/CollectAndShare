@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <title>Collect And Share</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async></script>
+    <script src="components/Header.js" async></script>
+    <link rel="stylesheet" href="components/Header.css">
+    <script src="components/Footer.js" async></script>
+    <link rel="stylesheet" href="components/Footer.css">
+</head>
+
+<body>
+
+    <header-component></header-component>
+
+    <main>
+
+        <section id="slideShow">
+            <div class="rectangle" id="rectangleContent">
+                <h4>Willkommen auf Collect and Share!</h4>
+                <span> Collect and Share ist eine Website, auf der du bestimmst, mit wem du deine Bilder teilst. Du
+                    kannst die Bilder nach Kategorien sortieren und ihnen einen Text zuweisen.</span>
+            </div>
+
+            <div class="slideShow">
+
+
+
+                <div class="slideImage" id="slide">
+
+                    <div class="arrow" id="leftArrow">
+                        <button class="symbol" onclick="arrowNavigation('left')">
+                            &#8249;
+                        </button>
+                    </div>
+
+                    <div class="arrow" id="rightArrow">
+                        <button class="symbol" onclick="arrowNavigation('right')">
+                            &#8250;
+                        </button>
+                    </div>
+
+                    <div class="buttonSlideContainer">
+                        <div class="buttonGroupSlides">
+                            <button onclick="setSlide(0)" class="dot activeDot">.</button>
+                            <button onclick="setSlide(1)" class="dot">.</button>
+                            <button onclick="setSlide(2)" class="dot">.</button>
+                            <button onclick="setSlide(3)" class="dot">.</button>
+                            <button onclick="setSlide(4)" class="dot">.</button>
+                            <button onclick="setSlide(5)" class="dot">.</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="content">
+
+            <div class="box box1" id="firstBox">
+                <h3>Entdecke die Magie des Sammelns</h3>
+                <span>
+                    Tauche ein in die faszinierende Welt von Collect and Share, wo deine Bilder nicht nur Erinnerungen
+                    sind, sondern zu Geschichten werden. Hier geht es um mehr als nur das einfache Teilen – es geht um
+                    das gemeinsame Erleben von Momenten, die das Leben besonders machen.
+                </span>
+            </div>
+            <div class="box box2" id="secondBox">
+                <img class="icons" src="./images/icons/story_icon.svg" alt="">
+            </div>
+
+            <div class="box box2" id="thirdBox">
+                <img class="icons" src="./images/icons/landscape_icon.svg" alt="">
+            </div>
+            <div class="box box1" id="fourthBox">
+                <h3>Deine Bilder, deine Geschichten, unsere Community</h3>
+                <span>
+                    Lade deine Lieblingsmomente hoch und erlebe, wie sie durch Kategorien lebendig werden. Ob
+                    atemberaubende
+                    Landschaften, kreative Kunstwerke oder lustige Schnappschüsse – bei uns findet jedes Bild seinen
+                    perfekten Platz. Verleihe deinen Erinnerungen eine Identität und entdecke, wie sie sich mit anderen
+                    verbinden.
+                </span>
+            </div>
+
+            <div class="box box1" id="fifthBox">
+                <h3>Verbinde dich mit Gleichgesinnten</h3>
+                <span>
+                    Collect and Share ist mehr als nur eine Plattform – es ist eine lebendige Community von Menschen,
+                    die
+                    die Schönheit des Teilens verstehen. Finde Gleichgesinnte, entdecke inspirierende Inhalte und lass
+                    dich
+                    von der Kreativität unserer Mitglieder begeistern. Dein Netzwerk, deine Freunde, deine Welt – alles
+                    an
+                    einem Ort.
+                </span>
+            </div>
+            <div class="box box2" id="sixthBox">
+                <img class="icons" src="./images/icons/connect_icon.svg" alt="">
+            </div>
+
+            <div class="box box2" id="seventhBox">
+                <img class="icons" src="./images/icons/collection_icon.svg" alt="">
+            </div>
+            <div class="box box1" id="eighthBox">
+                <h3>Erschaffe deine eigene Galerie</h3>
+                <span>
+                    Gib deinen Bildern den Raum, den sie verdienen. Ordne sie in individuellen Galerien, teile sie mit
+                    Freunden und gestalte deine persönliche visuelle Reise. Wir glauben daran, dass jedes Bild eine
+                    Geschichte erzählt – lass uns gemeinsam eine Sammlung von unvergesslichen Erlebnissen schaffen.
+                </span>
+            </div>
+
+            <div class="box box1" id="ninthBox">
+                <h3>Werde Teil der Bewegung</h3>
+                <span>
+                    Registriere dich noch heute und werde Teil einer wachsenden Gemeinschaft von Enthusiasten. Erlebe
+                    das
+                    Sammeln, Teilen und Entdecken von Bildern auf eine völlig neue Weise. Jeder Moment ist eine Chance,
+                    eine
+                    Verbindung herzustellen – sei dabei und gestalte mit uns die Zukunft des Teilens auf Collect and
+                    Share.
+                </span>
+            </div>
+
+            <div class="box box2" id="tenthBox">
+                <img class="icons" src="./images/icons/group_icon.svg" alt="">
+            </div>
+
+            <div class="box box2" id="eleventhBox">
+                <img class="icons" src="./images/icons/globe_icon.svg" alt="">
+            </div>
+            <div class="box box1" id="twelfthBox">
+                <h3>Deine Reise beginnt hier</h3>
+                <span>
+                    Mach den ersten Schritt und werde Teil von Collect and Share. Registriere dich jetzt und entdecke,
+                    wie
+                    das Teilen von Bildern zu einer bereichernden Erfahrung werden kann. Deine Community wartet darauf,
+                    von
+                    dir gehört zu werden. Willkommen bei Collect and Share – wo Bilder Geschichten werden.
+                </span>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer-component></footer-component>
+
+</body>
+
+</html>
